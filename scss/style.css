@@ -2,7 +2,7 @@
 :root {
   --white: #ffffff;
   --font-size: 16px;
-  --bg-button: #0033FF;
+  --primary: #0033FF;
   --radius-button: 8px;
 }
 
@@ -51,43 +51,34 @@ body a {
 .header nav ul li a:hover {
   color: #8257e6;
 }
-.header form {
+.header__actions {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-.header form input {
-  width: 44px;
-  border: none;
-  transition: width 0.3s ease;
-  background-color: transparent;
-  cursor: pointer;
-  font-size: var(--font-size);
-}
-.header form input:focus {
-  width: 200px;
-  opacity: 1;
+.header__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 40px;
+  background-color: var(--primary);
   color: var(--white);
   border-radius: var(--radius-button);
-  padding: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  transition: background-color 0.3s ease;
 }
-.header form input::placeholder {
+.header__btn:hover {
+  background-color: #3c4efc;
+}
+.header__btn.header__btn__text {
+  border: none;
+  background-color: transparent;
   color: #A6A8AD;
 }
-.header form button {
-  max-width: 95px;
-  padding: 8px 20px;
-  border-radius: 32px;
-  border: none;
-  background-color: var(--white);
-  color: #121214;
-  font-size: 16px;
-  line-height: 18.4px;
-  cursor: pointer;
-  text-align: center;
-}
-.header form button:hover {
-  background-color: #6f48c9;
+.header__btn.header__btn__text:hover {
+  color: #8257e6;
 }
 
 /*# sourceMappingURL=style.css.map */
