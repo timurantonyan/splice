@@ -27,7 +27,7 @@ body{
     margin: 0 auto;
     padding: 0 20px;
 
-    .header__inner{
+    .header__navigation{
       display: flex;
       justify-content: space-between;
     }
@@ -87,7 +87,7 @@ body{
       }
     }
   }
-  .header__wrapper{
+  .header__inner{
     width: 100%;
     margin-top: 20px;
     &.top{
@@ -113,6 +113,14 @@ body{
       }
     }
   }
+}
+
+.promo{
+  background-image: url("images/IMAGE-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 

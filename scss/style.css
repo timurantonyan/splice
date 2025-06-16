@@ -27,7 +27,7 @@ body a {
   margin: 0 auto;
   padding: 0 20px;
 }
-.header .container .header__inner {
+.header .container .header__navigation {
   display: flex;
   justify-content: space-between;
 }
@@ -81,14 +81,14 @@ body a {
 .header__btn.header__btn__text:hover {
   color: #8257e6;
 }
-.header .header__wrapper {
+.header .header__inner {
   width: 100%;
   margin-top: 20px;
 }
-.header .header__wrapper.top {
+.header .header__inner.top {
   background-color: var(--primary);
 }
-.header .header__wrapper.text {
+.header .header__inner.text {
   display: flex;
   color: var(--white);
   font-size: var(--font-size);
@@ -98,14 +98,22 @@ body a {
   text-align: center;
   justify-content: center;
 }
-.header .header__wrapper.text a {
+.header .header__inner.text a {
   color: var(--white);
   font-size: var(--font-size);
   line-height: 24px;
   transition: color 0.3s ease;
 }
-.header .header__wrapper.text a:hover {
+.header .header__inner.text a:hover {
   text-decoration: underline;
+}
+
+.promo {
+  background-image: url("images/IMAGE-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
