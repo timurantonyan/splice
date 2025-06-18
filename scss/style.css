@@ -150,5 +150,46 @@ body a {
   background-color: #3c4efc;
   color: var(--white);
 }
+.promo__scroll {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  cursor: pointer;
+  margin-top: 40px;
+}
+.promo__scroll .scroll-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.promo__scroll .scroll-item:hover__text {
+  transform: scale(2.1);
+}
+.promo__scroll .scroll-item:hover .arrow {
+  transform: translateY(22px);
+  transition: transform 0.3s ease;
+}
+.promo__scroll .scroll-item__text {
+  color: var(--white);
+  font-size: var(--font-size);
+  line-height: 24px;
+}
+.promo__scroll .scroll-item .arrow {
+  width: 12px;
+  height: 8px;
+}
+
+#section2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#section2span {
+  font-size: large;
+  color: var(--white);
+}
 
 /*# sourceMappingURL=style.css.map */

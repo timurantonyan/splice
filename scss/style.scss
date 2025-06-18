@@ -159,6 +159,50 @@ body{
       color: var(--white);
     }
   }
+  &__scroll{
+    display: flex;;
+    align-items: flex-end;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 40px;
+    .scroll-item{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      &:hover{
+        &__text{
+          transform:scale(2.1);
+        }
+        .arrow{
+          transform: translateY(22px);
+          transition: transform 0.3s ease;
+        }
+      }
+
+      &__text{
+        color: var(--white);
+        font-size: var(--font-size);
+        line-height: 24px;
+      }
+      .arrow{
+        width: 12px;
+        height: 8px;
+      }
+    }
+  }
+}
+#section2{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &span{
+    font-size: large;
+    color: var(--white);
+
+  }
 }
 
 
