@@ -1,5 +1,21 @@
 @import "../css/reset.css";
 
+@keyframes float {
+  0% {
+    box-shadow: 0 5px 15px 0px rgba(16, 16, 16, 0.6);
+    transform: translatey(0px);
+  }
+  50% {
+    box-shadow: 0 25px 15px 0px rgba(171, 171, 171, 0.2);
+    transform: translatey(-20px);
+  }
+  100% {
+    box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+    transform: translatey(0px);
+  }
+}
+
+
 :root {
   --white: #ffffff;
   --font-size: 16px;
@@ -160,25 +176,22 @@ body{
     }
   }
   &__scroll{
-    display: flex;;
-    align-items: flex-end;
+    display: inline-block;
+    align-items: center;
     justify-content: center;
     cursor: pointer;
     margin-top: 40px;
+
+    overflow: hidden;
+    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
     .scroll-item{
       display: flex;
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      &:hover{
-        &__text{
-          transform:scale(2.1);
-        }
-        .arrow{
-          transform: translateY(22px);
-          transition: transform 0.3s ease;
-        }
-      }
+
 
       &__text{
         color: var(--white);
