@@ -218,6 +218,7 @@ body{
     margin-bottom: 96px;
     &:nth-child(even){
       flex-direction: row-reverse;
+      text-align: right;
     }
   }
   &__content{
@@ -251,6 +252,11 @@ body{
         }
     }
   }
+    &__image{
+        width: 100%;
+        max-width: 580px;
+        height: auto;
+    }
 
 }
 

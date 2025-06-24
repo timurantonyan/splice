@@ -207,6 +207,7 @@ body a {
 }
 .products__item:nth-child(even) {
   flex-direction: row-reverse;
+  text-align: right;
 }
 .products__content span {
   font-size: var(--second-font-size);
@@ -236,6 +237,11 @@ body a {
 .products__content .products__btn:hover {
   background-color: #3c4efc;
   color: var(--white);
+}
+.products__image {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
 }
 
 /*# sourceMappingURL=style.css.map */
