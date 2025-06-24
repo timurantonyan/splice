@@ -2,15 +2,15 @@
 
 @keyframes float {
   0% {
-    box-shadow: 0 5px 15px 0px rgba(16, 16, 16, 0.6);
+    box-shadow: 0 5px 15px 0 rgba(16, 16, 16, 0.6);
     transform: translatey(0px);
   }
   50% {
-    box-shadow: 0 25px 15px 0px rgba(171, 171, 171, 0.2);
+    box-shadow: 0 25px 15px 0 rgba(171, 171, 171, 0.2);
     transform: translatey(-20px);
   }
   100% {
-    box-shadow: 0 5px 15px 0px rgba(255, 255, 255, 0.6);
+    box-shadow: 0 5px 15px 0 rgba(255, 255, 255, 0.6);
     transform: translatey(0px);
   }
 }
@@ -21,6 +21,9 @@
   --font-size: 16px;
   --primary: #0033FF;
   --radius-button: 8px;
+  --second-color:#A6A8AD;
+  --pading-btn: 6px 20px;
+  --second-font-size: 12px;
 }
 
 body{
@@ -176,16 +179,17 @@ body{
     }
   }
   &__scroll{
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
+    width: 100px;
     cursor: pointer;
-    margin-top: 40px;
-
-    overflow: hidden;
-    box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
-    transform: translatey(0px);
-    animation: float 6s ease-in-out infinite;
+    margin: 0 auto;
+    padding-top: 20px;
+    transition: transform 0.7s ease;
+    &:hover{
+      transform: translateY(-10px) scale(1.1);
+    }
     .scroll-item{
       display: flex;
       flex-direction: column;
@@ -205,17 +209,49 @@ body{
     }
   }
 }
-#section2{
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &span{
-    font-size: large;
-    color: var(--white);
-
+.products{
+  margin-top: 96px;
+  &__item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 96px;
+    &:nth-child(even){
+      flex-direction: row-reverse;
+    }
   }
+  &__content{
+    span{
+        font-size: var(--second-font-size);
+        line-height: 16px;
+        color: var(--second-color);
+        margin-bottom: 5px;
+    }
+    .products__title{
+      font-size:28px;
+      line-height: 32px;
+      margin-bottom: 12px;
+    }
+    .products__text{
+      max-width: 424px;
+      font-size: var(--font-size);
+      line-height: 24px;
+      margin-bottom: 18px;
+    }
+    .products__btn{
+      background-color: var(--primary);
+      color: var(--white);
+      border-radius: var(--radius-button);
+      padding: var(--pading-btn);
+      cursor: pointer;
+      transition: 0.2s ease;
+        &:hover{
+            background-color: #3c4efc;
+            color: var(--white);
+        }
+    }
+  }
+
 }
 
 
