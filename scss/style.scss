@@ -227,6 +227,7 @@ body{
         line-height: 16px;
         color: var(--second-color);
         margin-bottom: 5px;
+        text-transform: uppercase;
     }
     .products__title{
       font-size:28px;
@@ -258,6 +259,89 @@ body{
         height: auto;
     }
 
+}
+
+.community{
+  margin-top: 20px;
+  margin-bottom: 120px;
+  &__title{
+    font-size:28px;
+    line-height: 32px;
+    margin-bottom: 24px;
+    text-align: left;
+  }
+  &__info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  &__item{
+    max-width: 362px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    background-color: #F8F8F8;
+    border-radius: 8px;
+    padding: 32px;
+  }
+  &__image{
+    width: 100%;
+    max-width: 223px;
+    height: auto;
+    border-radius: 500px;
+    margin: 0 auto;
+  }
+  &__text{
+    max-width: 296px;
+    font-size: 20px;
+    line-height: 25px;
+    margin-top: 30px;
+    color: #000000;
+  }
+  &__author{
+    color: #767676;
+    margin-top: 16px;
+  }
+}
+
+.start-now{
+  background-image: url("../images/start-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__content{
+    display: flex;
+    flex-direction: column;
+    color: var(--white);
+    align-items: center;
+    justify-content: center;
+    gap: 58px;
+  }
+  &__title{
+    font-size: 54px;
+    line-height: 60px;
+    color: var(--white);
+    text-align: center;
+  }
+  &__btn{
+    padding: var(--pading-btn);
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: var(--radius-button);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background-color: #3c4efc;
+      color: var(--white);
+    }
+  }
 }
 
 
