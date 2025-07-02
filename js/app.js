@@ -6,3 +6,5 @@ document.getElementById('burger-toggle').addEventListener('change', function() {
         navMenu.classList.remove('nav__list--open');
     }
 });
+
+
