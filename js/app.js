@@ -8,13 +8,12 @@ document.getElementById('burger-toggle').addEventListener('change', function() {
     }
 });
 
-const header = document.querySelector('.header__navigation');
-const stickyOffset = header.offsetTop;
-
-window.addEventListener('scroll', () => {
-    if (window.scrollY > stickyOffset) {
-        header.classList.add('.sticky');
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header__navigation');
+    if (window.scrollY > 100) {
+        header.classList.add('sticky');
     } else {
-        header.classList.remove('.sticky');
+        header.classList.remove('sticky');
     }
+    console.log('Scroll position:', window.scrollY, 'px')
 });
