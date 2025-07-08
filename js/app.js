@@ -1,3 +1,4 @@
+
 document.getElementById('burger-toggle').addEventListener('change', function() {
     const navMenu = document.querySelector('.nav__list');
     if (this.checked) {
