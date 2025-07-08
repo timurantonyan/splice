@@ -56,12 +56,17 @@ body{
       display: flex;
       justify-content: space-between;
       align-items: center;
-      position: sticky;
-      top: 0;
-      left: 0;
+      position: relative;
       width: 100%;
-      z-index: 1000;
-      background-color: rgba(18, 18, 20, 0.8);
+      transition: all 0.3s ease;
+      .sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: white;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        z-index: 1000;
+      }
     }
 
   .nav{
