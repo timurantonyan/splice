@@ -1,4 +1,7 @@
-import Swiper from 'swiper/bundle';
+import Swiper from 'swiper';
+
+
+
 document.getElementById('burger-toggle').addEventListener('change', function() {
     const navMenu = document.querySelector('.nav__list');
     if (this.checked) {
@@ -7,6 +10,8 @@ document.getElementById('burger-toggle').addEventListener('change', function() {
         navMenu.classList.remove('nav__list--open');
     }
 });
+
+
 
 window.addEventListener('scroll', function() {
     const header = document.querySelector('.header__navigation');
@@ -18,27 +23,3 @@ window.addEventListener('scroll', function() {
     console.log('Scroll position:', window.scrollY, 'px')
 });
 
-const swiper = new Swiper('.swiper', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    loop: true,
-
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
-
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-        768: {
-            slidesPerView: 2,
-        },
-        1024: {
-            slidesPerView: 3,
-        }
-    }
-});

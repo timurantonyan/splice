@@ -1,6 +1,4 @@
-
 @import "../css/reset.css";
-@import "../css/swiper-bundle.min.css";
 @keyframes float {
   0% {
     box-shadow: 0 5px 15px 0 rgba(16, 16, 16, 0.6);
